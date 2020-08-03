@@ -16,5 +16,6 @@ class TicTacToe
   end
   def move(i, token = "X")
     @board[i] || token
+    binding.pry
   end
 end 
