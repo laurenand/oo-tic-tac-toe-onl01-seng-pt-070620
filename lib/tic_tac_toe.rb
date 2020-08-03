@@ -15,6 +15,6 @@ class TicTacToe
     string.to_i - 1
   end
   def move(i, token = "X")
-    @board[token]
+    @board[i]
   end
 end 
