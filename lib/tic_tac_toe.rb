@@ -23,6 +23,6 @@ class TicTacToe
     else 
       true
     end
-    binding.pry
+    
   end
 end 
