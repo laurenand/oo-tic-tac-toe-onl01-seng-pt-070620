@@ -24,4 +24,5 @@ class TicTacToe
       true
     end
   end
+  def valid_move?
 end 
