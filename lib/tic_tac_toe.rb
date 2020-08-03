@@ -24,6 +24,10 @@ class TicTacToe
       true
     end
   end
-  def valid_move?
+  def valid_move?(i)
+    if @board[i] == " "
+      true
+    else
+      false
   end
 end 
