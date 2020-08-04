@@ -30,7 +30,7 @@ class TicTacToe
     if valid_move?(i)
       move(i, current_player)
     else
-      puts "Please choose 1-9."
+      turn
     end
     display_board
   end
