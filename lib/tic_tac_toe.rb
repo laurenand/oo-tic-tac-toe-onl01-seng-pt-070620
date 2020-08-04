@@ -33,7 +33,7 @@ class TicTacToe
   end
   def turn
     puts "Please choose 1-9."
-    user_input = gets.strip
+    string = gets.strip
     i = input_to_index(string)
   end
   def turn_count
