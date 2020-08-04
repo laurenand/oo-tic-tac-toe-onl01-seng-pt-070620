@@ -18,7 +18,7 @@ class TicTacToe
     @board[i] = token
   end
   def position_taken?(i)
-    if @board[i] != " "
+    @board[i] != " "
   end
   def valid_move?(i)
     if @board[i] == " "
