@@ -40,4 +40,30 @@ class TicTacToe
   def current_player
     turn_count % 2 == 0 ? "X" : "O"
   end
+  def won?
+        WIN_COMBINATIONS.detect do |combo|
+            position_taken?(combo[0]) &&
+            @board[combo[0]] == @board[combo[1]] &&
+            @board[combo[1]] == @board[combo[2]]
+        end
+    end 
+    def full?
+        @board.all? {|space| space != " "}
+    end 
+    def draw?
+        full? && !won?
+    end 
+    def over?
+        won? || draw?
+    end 
+    def winner
+        won? ? @board[won?[0]] : nil
+    end
+    def play
+        until over?
+            turn
+        end
+        puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
+    end 
+end
 end 
