@@ -45,4 +45,6 @@ class TicTacToe
   def turn_count
     @board.count{|turns| turns != " "}
   end 
+  def current_player
+  end
 end 
