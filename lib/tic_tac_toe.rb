@@ -66,3 +66,5 @@ class TicTacToe
         puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
     end 
 end 
+
+TicTacToe.new
