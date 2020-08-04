@@ -21,7 +21,7 @@ class TicTacToe
     @board[i] != " "
   end
   def valid_move?(i)
-    !position_taken?(index) && index.between?(0, 8)
+    !position_taken?(i) && i.between?(0, 8)
   end
   def turn
     puts "Please choose 1-9."
