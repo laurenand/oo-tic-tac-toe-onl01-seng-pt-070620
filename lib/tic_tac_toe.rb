@@ -65,5 +65,4 @@ class TicTacToe
         end
         puts won? ? "Congratulations #{winner}!" : "Cat's Game!"
     end 
-end
 end 
