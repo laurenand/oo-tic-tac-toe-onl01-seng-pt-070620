@@ -18,11 +18,7 @@ class TicTacToe
     @board[i] = token
   end
   def position_taken?(i)
-    if @board[i] == " "
-      false
-    else 
-      true
-    end
+    if @board[i] != " "
   end
   def valid_move?(i)
     if @board[i] == " "
