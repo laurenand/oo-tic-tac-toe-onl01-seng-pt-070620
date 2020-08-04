@@ -32,6 +32,8 @@ class TicTacToe
     end
   end
   def turn_count
+    turns = 0
+    until turns == 3
     
   end
 end 
