@@ -36,4 +36,5 @@ class TicTacToe
     until turns == 3
     turns +=1
   end
+  end
 end 
