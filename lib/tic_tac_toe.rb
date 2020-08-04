@@ -33,7 +33,7 @@ class TicTacToe
   end
   def turn
     puts "Please choose 1-9"
-    user_input = gets.split
+    user_input = gets.strip
   end
   def turn_count
     turns = 0
