@@ -35,6 +35,7 @@ class TicTacToe
     puts "Please choose 1-9."
     string = gets.strip
     i = input_to_index(string)
+    if valid_move?(i)
   end
   def turn_count
     turns = 0
