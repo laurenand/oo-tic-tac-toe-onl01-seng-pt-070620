@@ -36,6 +36,7 @@ class TicTacToe
     string = gets.strip
     i = input_to_index(string)
     if valid_move?(i)
+      move(i, token)
   end
   def turn_count
     turns = 0
